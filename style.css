@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+.card-container {
+    width: 200px;
+    height: 300px;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s ease-in-out;
+    transform-style: preserve-3d;
+}
+
+.card figure {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 1em;
+}
+
+.rotate {
+    transform: rotateY(180deg);
+}
+
+.front {
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    background: linear-gradient(to top, aqua, rgba(0, 255, 255, 0.39));
+    transition: transform 1s ease-in-out;
+    color: rgb(21, 64, 112);
+}
+
+.back {
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    background: linear-gradient(to top, violet, rgba(238, 130, 238, 0.37));
+    transform: rotateY(180deg);
+    color: silver;
+}
+
+button {
+    padding: .5em 1em;
+    border-radius: .5em;
+    background: transparent;
+    border: 1px solid silver;
+    outline: none;
+    color: silver;
+    margin-top: -5em;
+}
+
+p {
+    font-size: .9em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+i {
+    font-size: 3em;
+}
